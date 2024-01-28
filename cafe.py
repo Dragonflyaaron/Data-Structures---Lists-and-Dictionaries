@@ -13,7 +13,7 @@ menu = ['Coffee',
         'French Toast']
 
 # Printing the *menu like this allows us to unpack and print the menu as plain text on seperate lines.
-print ("The cafe menu:",*menu , sep="\n")
+print (f"The cafe menu:",*menu , sep="\n")
 print ("\n")
 
 # Stock dictionary.
@@ -53,9 +53,8 @@ for key, value in item_value.items():
      print (key, value, sep=": £")
 print ("\n")
 
-# Store value takes all the information added together and saves as a string.
+# Store value takes all the information adds them together and saves as a string.
 store_value = "{:.2f}".format(item_value['Coffee'] + item_value['Tea'] + item_value['Pancakes'] + item_value['French Toast'])
 
-print ("The overall combined value of remaining inventory:")
-print ("£"+store_value)
+print (f"The overall combined value of remaining inventory:\n£{store_value}")
 
