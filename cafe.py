@@ -25,8 +25,8 @@ stock = {'Coffee':13,
 # Because its a dictionary we need it to print differently to show both key(k) and value(v).
 # It makes it more neat and presentable to do it this way to see it in a vertical list if we wished to call it.
 print ("The stock Inventory:")
-for k, v in stock.items():
-     print (k, v, sep=": ")
+for key, value in stock.items():
+     print (key, value, sep=": ")
 print ("\n")
 
 
@@ -37,8 +37,8 @@ price = {'Coffee':3.00,
          'French Toast':6.20}
 
 print ("The Price of each item:")
-for k, v in price.items():
-     print (k, v, sep=": £")
+for key, value in price.items():
+     print (key, value, sep=": £")
 print ("\n")
 
 # Empty item value dictionary.
@@ -49,8 +49,8 @@ for key in stock:
     item_value[key] = (stock[key] * price[key])
 
 print ("The remaining value per product:")
-for k, v in item_value.items():
-     print (k, v, sep=": £")
+for key, value in item_value.items():
+     print (key, value, sep=": £")
 print ("\n")
 
 # Store value takes all the information added together and saves as a string.
